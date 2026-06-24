@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import crest from "@/assets/stsn-crest.png";
-import { NAV, SITE } from "@/lib/site-data";
+import { NAV } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -23,19 +23,30 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 bg-gradient-brown text-primary-foreground transition-shadow",
+        "sticky top-0 z-50 bg-[linear-gradient(135deg,#28170f_0%,#452b1b_52%,#6a4729_100%)] text-primary-foreground transition-shadow",
         scrolled && "shadow-elegant",
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-3">
-          <span className="grid size-12 place-items-center rounded-full bg-primary-foreground/95 shadow-soft">
-            <img src={crest} alt="STSN crest" className="size-10 object-contain" width={48} height={48} />
+        <Link
+          to="/"
+          className="group flex items-center gap-3.5 rounded-xl px-2 py-1.5 transition-colors hover:bg-primary-foreground/5"
+        >
+          <span className="grid size-14 place-items-center rounded-full border-2 border-gold bg-[#2f1d13] p-1 shadow-gold">
+            <img
+              src={crest}
+              alt="STSN crest"
+              className="size-11 rounded-full object-cover"
+              width={48}
+              height={48}
+            />
           </span>
-          <span className="leading-tight">
-            <span className="block font-display text-lg font-semibold sm:text-xl">{SITE.short}</span>
-            <span className="hidden text-[11px] uppercase tracking-[0.2em] text-primary-foreground/70 sm:block">
-              School of Novaliches
+          <span className="leading-none">
+            <span className="block font-display text-lg font-semibold tracking-normal text-primary-foreground sm:text-xl">
+              St. Theresa's School
+            </span>
+            <span className="mt-1 hidden text-[11px] font-semibold uppercase tracking-[0.22em] text-gold sm:block">
+              of Novaliches
             </span>
           </span>
         </Link>
@@ -78,7 +89,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-primary-foreground/10 bg-gradient-brown lg:hidden">
+        <div className="border-t border-primary-foreground/10 bg-[linear-gradient(135deg,#28170f_0%,#452b1b_52%,#6a4729_100%)] lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3">
             {NAV.map((item) => (
               <Link

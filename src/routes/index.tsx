@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HeartHandshake, Flame, Mountain, ShieldCheck, ArrowRight, GraduationCap, Megaphone, CalendarDays } from "lucide-react";
-import heroImg from "@/assets/hero-stsn.jpg";
+import heroImg from "@/assets/stsn.png";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/PageHero";
@@ -32,7 +32,7 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate flex min-h-[88vh] items-center overflow-hidden">
+      <section className="relative isolate flex min-h-[calc(100svh-5rem)] items-center overflow-hidden">
         <img src={heroImg} alt="Theresian students celebrating" className="absolute inset-0 -z-10 size-full object-cover animate-slow-zoom" width={1920} height={1080} />
         <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-hero)" }} />
         <div className="mx-auto max-w-7xl px-4 py-24 text-center text-primary-foreground sm:px-6 lg:px-8">
