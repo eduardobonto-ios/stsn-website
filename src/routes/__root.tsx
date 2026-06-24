@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "St. Theresa's School of Novaliches (STSN) offers quality Catholic education from Preschool to Senior High — excellence in academics, values formation, and faith since 1989.",
+          "St. Theresa's School of Novaliches (STSN) offers quality Catholic education from Preschool to Senior High — excellence in academics, values formation, and faith since 1990.",
       },
       { name: "author", content: "St. Theresa's School of Novaliches" },
       { property: "og:title", content: "St. Theresa's School of Novaliches" },

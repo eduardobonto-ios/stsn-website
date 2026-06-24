@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About STSN | St. Theresa's School of Novaliches" },
-      { name: "description", content: "Established in 1989, St. Theresa's School of Novaliches has grown into a full Catholic basic-education institution committed to faith, excellence, and Filipino values." },
+      { name: "description", content: "Established in 1990, St. Theresa's School of Novaliches has grown into a full Catholic basic-education institution committed to faith, excellence, and Filipino values." },
       { property: "og:title", content: "About St. Theresa's School of Novaliches" },
       { property: "og:description", content: "Our history, mission, vision, and core values." },
     ],
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")({
 const VALUE_ICONS = { HeartHandshake, Flame, Mountain, ShieldCheck } as const;
 
 const HISTORY = [
-  "The St. Theresa's School of Novaliches was established in 1989 as a modest response to the needs of the times. It started as a pre-school with only one classroom each for the Nursery, Kinder I and Kinder II levels. It gained government recognition for official pre-school operation on July 30, 1991.",
+  "The St. Theresa's School of Novaliches was established in 1990 as a modest response to the needs of the times. It started as a pre-school with only one classroom each for the Nursery, Kinder I and Kinder II levels. It gained government recognition for official pre-school operation on July 30, 1991.",
   "With an initial workforce of three teachers and three administrative personnel looking after the welfare of about thirty students, it steadily grew to be a full-pledged elementary school with a well-staffed administration, faculty and non-teaching personnel as well. The government officially recognized it as such on April 6, 1993.",
   "As the school has been consistent in providing its resident students with continuity in the pursuit of quality education within the community, it also opened its doors and accepted students in the secondary level of education. Government recognition for this level was granted in June 16, 1997.",
   "Since then, St. Theresa's School of Novaliches has grown in magnitude and in its quest for excellence for academics and other fields of endeavor but has remained faithful to the task of molding individuals in the Christian faith who are proud of their national heritage, are responsive and productive members of the family and society and are worthy and deserving of their special place in the Theresian community which includes parents, guardians, teachers and families.",
@@ -29,7 +29,7 @@ const HISTORY = [
 function About() {
   return (
     <>
-      <PageHero eyebrow="Who We Are" title="About STSN" subtitle="A Christian, Filipino institution forming learners since 1989." />
+      <PageHero eyebrow="Who We Are" title="About STSN" subtitle="A Christian, Filipino institution forming learners since 1990." />
 
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-[0.85fr_1fr] lg:px-8">

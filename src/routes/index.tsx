@@ -38,7 +38,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-4 py-24 text-center text-primary-foreground sm:px-6 lg:px-8">
           <Reveal>
             <span className="inline-block rounded-full border border-gold/50 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-gold backdrop-blur-sm">
-              Est. 1989 · Novaliches, Quezon City
+              Est. 1990 · Novaliches, Quezon City
             </span>
           </Reveal>
           <Reveal delay={100}>

@@ -9,8 +9,8 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <div className="flex items-center gap-3">
-            <span className="grid size-12 place-items-center rounded-full bg-primary-foreground/95">
-              <img src={crest} alt="STSN crest" className="size-10 object-contain" width={48} height={48} loading="lazy" />
+            <span className="grid size-14 place-items-center rounded-full border-2 border-gold bg-[#2f1d13] p-1 shadow-gold">
+              <img src={crest} alt="STSN crest" className="size-11 rounded-full object-cover" width={48} height={48} loading="lazy" />
             </span>
             <span className="font-display text-lg font-semibold leading-tight">
               St. Theresa's School<br />of Novaliches

@@ -3,7 +3,7 @@ export const SITE = {
   short: "STSN",
   tagline: "Excellence in Education · Values Formation · Faith",
   email: "stsnbasiceduc@gmail.com",
-  phone: "(02) 8275-3916",
+  phone: "(02) 8939-9138",
   address:
     "7 Kingfisher Street Corner Skylark Subdivision, Barangay Kaligayahan, Novaliches, Quezon City",
   hours: [
